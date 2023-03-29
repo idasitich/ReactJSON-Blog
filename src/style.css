@@ -15,7 +15,7 @@ nav div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: baseline;
 }
 .flex-blog {
   display: flex;
@@ -29,4 +29,8 @@ nav div {
 }
 .center {
   text-align: center;
+}
+.newContact {
+  display: flex;
+  justify-content: end;
 }
