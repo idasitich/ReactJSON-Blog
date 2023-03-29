@@ -82,8 +82,8 @@ export default function Contact() {
           return;
         } else {
           setContact(
-            contact.filter((c) => {
-              return c.id !== id;
+            contact.filter((user) => {
+              return user.id !== id;
             })
           );
         }
