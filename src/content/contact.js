@@ -62,7 +62,7 @@ export default function Contact() {
         // setUsers((users) => [...users, data]);
         const updatedContact = contact.map((user) => {
           if (user.id === id) {
-            user.name = name;
+            user.first_name = name;
             user.email = email;
           }
 
@@ -82,8 +82,8 @@ export default function Contact() {
           return;
         } else {
           setContact(
-            contact.filter((user) => {
-              return user.id !== id;
+            contact.filter((c) => {
+              return c.id !== id;
             })
           );
         }
