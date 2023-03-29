@@ -13,15 +13,13 @@ export default function Update({
   const handleEdit = () => {
     setIsEdit(!isEdit);
   };
-
-  const handleDelete = () => {
-    onDelete(id);
-  };
-
   const handleOnEditSubmit = (evt) => {
     evt.preventDefault();
     onEdit(id, evt.target.name.value, evt.target.email.value);
     setIsEdit(!isEdit);
+  };
+  const handleDelete = () => {
+    onDelete(id);
   };
 
   return (

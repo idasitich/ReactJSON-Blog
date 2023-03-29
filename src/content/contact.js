@@ -78,15 +78,12 @@ export default function Contact() {
       method: 'DELETE',
     })
       .then((response) => {
-        if (response.status !== 200) {
-          return;
-        } else {
-          setContact(
-            contact.filter((user) => {
-              return user.id !== id;
-            })
-          );
-        }
+        console.log(id);
+        setContact(
+          contact.filter((user) => {
+            return user.id !== id;
+          })
+        );
       })
       .catch((error) => console.log(error));
   };
