@@ -5,11 +5,10 @@ import Update from './update.js';
 
 export default function Contact() {
   const [contact, setContact] = useState([]);
+
   const getContact = async () => {
     const res = await fetch('https://reqres.in/api/users/');
-    console.log(res);
     const json = await res.json();
-    console.log(json.data);
     setContact(json.data);
   };
   useEffect(() => {
