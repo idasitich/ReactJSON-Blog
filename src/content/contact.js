@@ -15,8 +15,8 @@ export default function Contact({ data }) {
   }, []);
   return (
     <>
-      <h1>Contact</h1>
-      <div className="flex">
+      <h1 className="center">Contact Bloger</h1>
+      <div className="flex-contact">
         {contact.map((user) => {
           return (
             <div key={user.id}>

@@ -11,3 +11,22 @@ nav div {
   display: inline-block;
   padding-left: 0.5em;
 }
+.flex-contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-blog {
+  display: flex;
+  flex-direction: column;
+}
+.flex-contact div {
+  padding: 0em 1em;
+}
+.flex-blog div {
+  padding: 1em;
+}
+.center {
+  text-align: center;
+}

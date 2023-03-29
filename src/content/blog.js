@@ -16,8 +16,8 @@ export default function Blog() {
 
   return (
     <>
-      <h1>Blog</h1>
-      <div className="flex">
+      <h1 className="center">Blog</h1>
+      <div className="flex-blog">
         {blog.map((user) => {
           return (
             <div key={user.id}>
