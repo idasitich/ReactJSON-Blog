@@ -78,9 +78,13 @@ nav div {
 ul {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0%;
 }
 ul li {
   display: inline;
+  margin: 0;
+  padding: 0%;
 }
 nav div {
   padding: 0.5em 0.8em;
