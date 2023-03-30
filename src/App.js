@@ -39,34 +39,37 @@ export default function App() {
   return (
     <>
       <Router>
-        <ul>
-          <li>
-            <nav>
-              <Link to="/">
-                <div id="1" className=" mark Home">
-                  Home
-                </div>
-              </Link>
-              <Link to="Blog">
-                <div id="2" className=" mark blog">
-                  Blog
-                </div>
-              </Link>
-              <Link to="Contact">
-                <div id="3" className="mark contact">
-                  Contact
-                </div>
-              </Link>
-            </nav>
-          </li>
-          <li>
-            <div className="burger">
-              <div>
-                <FontAwesomeIcon icon={faBars} />
-              </div>
+        <nav id="nav">
+          <Link to="/">
+            <div id="1" className=" mark Home">
+              Home
             </div>
-          </li>
-        </ul>
+          </Link>
+          <Link to="Blog">
+            <div id="2" className=" mark blog">
+              Blog
+            </div>
+          </Link>
+          <Link to="Contact">
+            <div id="3" className="mark contact">
+              Contact
+            </div>
+          </Link>
+        </nav>
+        <div
+          id="bug"
+          onClick={() => {
+            let nav = document.getElementById('nav');
+            let burger = document.getElementById('bug');
+            nav.classList.toggle('show');
+            burger.style.top = '1%';
+          }}
+          className="burger"
+        >
+          <div>
+            <FontAwesomeIcon icon={faBars} size={'2x'} />
+          </div>
+        </div>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
