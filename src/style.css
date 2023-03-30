@@ -4,8 +4,7 @@ p {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 nav {
-  display: flex;
-  justify-content: baseline;
+  flex: 1;
 }
 nav div {
   display: inline-block;
@@ -76,7 +75,30 @@ nav div {
   height: 14vmax;
   object-fit: cover;
 }
-
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  display: inline;
+}
+nav div {
+  padding: 0.5em 0.8em;
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+nav div:hover {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+.clicked {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+.burger {
+  flex: 1;
+  display: none;
+}
 @media (max-width: 768px) {
   .form {
     position: absolute;
