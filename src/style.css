@@ -43,18 +43,38 @@ nav div {
 
 .btn-md {
   padding: 1em;
+  margin: 0;
   text-decoration: none;
-  border: none;
+  border: 1px solid rgb(29, 29, 29);
   background-color: rgb(29, 29, 29);
   color: white;
+  box-sizing: border-box;
+}
+.btn-md:hover {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+  text-decoration: none;
+  border: 1px solid rgb(29, 29, 29);
+  background-color: white;
+  color: rgb(29, 29, 29);
 }
 .btn-sm {
   padding: 0.5em 1em;
   font-size: 0.8em;
   text-decoration: none;
-  border: none;
+  border: 1px solid rgb(29, 29, 29);
   background-color: rgb(29, 29, 29);
   color: white;
+  margin-left: 2px;
+}
+.btn-sm:hover {
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: 1px solid rgb(29, 29, 29);
+  background-color: white;
+  color: rgb(29, 29, 29);
   margin-left: 2px;
 }
 .form-adj div {
