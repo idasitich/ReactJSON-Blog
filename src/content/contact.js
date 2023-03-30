@@ -5,6 +5,7 @@ import Update from './update.js';
 
 export default function Contact() {
   const [contact, setContact] = useState([]);
+  const [toggle, setToggle] = useState([]);
 
   const getContact = async () => {
     const res = await fetch('https://reqres.in/api/users/');
@@ -94,9 +95,16 @@ export default function Contact() {
     <>
       <h1 className="center">Contact Bloger</h1>
       <div className="newContact">
-        <button>New Contact</button>
+        <button
+          className="btn-md"
+          onClick={() => {
+            setToggle(!toggle);
+          }}
+        >
+          New Contact
+        </button>
       </div>
-      <NewContact onAdd={onAdd} />
+      <NewContact onAdd={onAdd} toggle={toggle} />
       <div className="flex-contact">
         {contact.map((user) => (
           <Update
