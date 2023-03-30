@@ -15,7 +15,7 @@ export default function Contact() {
     getContact();
   }, []);
 
-  const onAdd = async (name, email) => {
+  const onAdd = async (name, email, avatar) => {
     await fetch('https://reqres.in/api/users/', {
       method: 'POST',
       headers: {
@@ -24,6 +24,7 @@ export default function Contact() {
       body: JSON.stringify({
         first_name: name,
         email: email,
+        avatar: avatar,
       }),
     })
       .then((response) => {
@@ -39,12 +40,13 @@ export default function Contact() {
       })
       .catch((error) => console.log(error));
   };
-  const onEdit = async (id, name, email) => {
+  const onEdit = async (id, name, email, avatar) => {
     await fetch(`https://reqres.in/api/users/${id}`, {
       method: 'PUT',
       body: JSON.stringify({
         first_name: name,
         email: email,
+        avatar: avatar,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
@@ -63,6 +65,8 @@ export default function Contact() {
           if (user.id === id) {
             user.first_name = name;
             user.email = email;
+            user.avatar = avatar;
+            console.log(avatar);
           }
 
           return user;
