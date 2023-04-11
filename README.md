@@ -1,3 +1,4 @@
 # ReactJSON-Blog
+You can access the link from here:
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-e5xqjb)
+https://idasitich.github.io/ReactJSON-Blog/
