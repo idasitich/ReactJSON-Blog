@@ -71,8 +71,9 @@ export default function App() {
           </div>
         </div>
         <main>
+          <h1>Welcome To my Site.</h1>
           <Routes>
-            <Route path="ReactJSON-Blog" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />
             <Route />
