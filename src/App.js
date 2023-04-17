@@ -71,7 +71,6 @@ export default function App() {
           </div>
         </div>
         <main>
-          <h1>Welcome To my Site.</h1>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="blog" element={<Blog />} />
