@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ReactJSON-Blog/static/css/main.eb86f30c.css",
-    "main.js": "/ReactJSON-Blog/static/js/main.60e43d52.js",
+    "main.js": "/ReactJSON-Blog/static/js/main.c9ed98c7.js",
     "index.html": "/ReactJSON-Blog/index.html",
     "main.eb86f30c.css.map": "/ReactJSON-Blog/static/css/main.eb86f30c.css.map",
-    "main.60e43d52.js.map": "/ReactJSON-Blog/static/js/main.60e43d52.js.map"
+    "main.c9ed98c7.js.map": "/ReactJSON-Blog/static/js/main.c9ed98c7.js.map"
   },
   "entrypoints": [
     "static/css/main.eb86f30c.css",
-    "static/js/main.60e43d52.js"
+    "static/js/main.c9ed98c7.js"
   ]
 }
