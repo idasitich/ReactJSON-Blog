@@ -72,7 +72,7 @@ export default function App() {
         </div>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="ReactJson-Blog" element={<Home />} />
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />
             <Route />
